@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
@@ -6,13 +6,13 @@
 		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="addons\;src\;" />
+		<Option virtualFolders="addons\;src\;addons\ofxNI2\src\utils\;addons\ofxNetwork\src\;addons\ofxSvg\libs\svgTiny\src\;addons\ofxNI2\libs\NiTE2\include\;addons\ofxOsc\libs\oscpack\src\ip\;addons\ofxThreadedImageLoader\src\;addons\ofxOsc\src\;addons\ofxOsc\libs\oscpack\src\ip\posix\;addons\ofxVectorGraphics\src\;addons\ofxVectorGraphics\libs\;addons\ofxNI2\libs\OpenNI2\include\ni2\Android-Arm\;addons\ofxNI2\libs\OpenNI2\include\ni2\Driver\;addons\ofxOsc\libs\oscpack\src\ip\win32\;addons\ofxGui\src\;addons\ofxNI2\src\;addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-Arm\;addons\ofxOsc\libs\oscpack\src\osc\;addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-x86\;addons\ofxNI2\libs\OpenNI2\include\ni2\MacOSX\;addons\ofxNI2\libs\OpenNI2\include\ni2\;addons\ofxSvg\src\;addons\ofxNI2\libs\OpenNI2\include\ni2\Win32\;" />
 		<Build>
 			<Target title="release">
-				<Option output="bin\$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj\Release" />
-				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworks.lib;" />
+				<Option object_output="obj/Release" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworks.lib;" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="2" />
@@ -25,10 +25,10 @@
 				</Linker>
 			</Target>
 			<Target title="debug">
-				<Option output="bin\$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/$(PROJECT_NAME)_DEBUG" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="bin" />
-				<Option object_output="obj\Debug\" />
-				<Option external_deps="..\..\..\libs\openFrameworksCompiled\lib\win_cb\openFrameworksDebug.lib;" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/win_cb/openFrameworksDebug.lib;" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="2" />
@@ -42,125 +42,74 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wno-multichar" />
-			<Add directory="..\..\..\libs\glu\include" />
-			<Add directory="..\..\..\libs\freetype\include" />
-			<Add directory="..\..\..\libs\freetype\include\freetype2" />
-			<Add directory="..\..\..\libs\FreeImage\include" />
-			<Add directory="..\..\..\libs\quicktime\include" />
-			<Add directory="..\..\..\libs\rtAudio\include" />
-			<Add directory="..\..\..\libs\fmodex\include" />
-			<Add directory="..\..\..\libs\videoInput\include" />
-			<Add directory="..\..\..\libs\glew\include" />
-			<Add directory="..\..\..\libs\glut\include" />
-			<Add directory="..\..\..\libs\glfw\include" />
-			<Add directory="..\..\..\libs\openFrameworks" />
-			<Add directory="..\..\..\libs\openFrameworks\3d" />
-			<Add directory="..\..\..\libs\openFrameworks\app" />
-			<Add directory="..\..\..\libs\openFrameworks\communication" />
-			<Add directory="..\..\..\libs\openFrameworks\events" />
-			<Add directory="..\..\..\libs\openFrameworks\gl" />
-			<Add directory="..\..\..\libs\openFrameworks\graphics" />
-			<Add directory="..\..\..\libs\openFrameworks\math" />
-			<Add directory="..\..\..\libs\openFrameworks\sound" />
-			<Add directory="..\..\..\libs\openFrameworks\types" />
-			<Add directory="..\..\..\libs\openFrameworks\utils" />
-			<Add directory="..\..\..\libs\openFrameworks\video" />
-			<Add directory="..\..\..\libs\poco\include" />
-			<Add directory="..\..\..\libs\tess2\include" />
-			<Add directory="..\..\..\libs\cairo\include\cairo" />
-			<Add directory="../../../addons/ofxAssimpModelLoader/libs" />
-			<Add directory="../../../addons/ofxAssimpModelLoader/src" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\libs\assimp" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\libs\assimp\include" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\libs\assimp\include\Compiler" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\libs\assimp\lib" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\libs\assimp\lib\win_cb" />
-			<Add directory="../../../addons\ofxAssimpModelLoader\src" />
+			<Add directory="../../../libs/glu/include" />
+			<Add directory="../../../libs/freetype/include" />
+			<Add directory="../../../libs/freetype/include/freetype2" />
+			<Add directory="../../../libs/FreeImage/include" />
+			<Add directory="../../../libs/quicktime/include" />
+			<Add directory="../../../libs/rtAudio/include" />
+			<Add directory="../../../libs/fmodex/include" />
+			<Add directory="../../../libs/videoInput/include" />
+			<Add directory="../../../libs/glew/include" />
+			<Add directory="../../../libs/glut/include" />
+			<Add directory="../../../libs/glfw/include" />
+			<Add directory="../../../libs/openFrameworks" />
+			<Add directory="../../../libs/openFrameworks/3d" />
+			<Add directory="../../../libs/openFrameworks/app" />
+			<Add directory="../../../libs/openFrameworks/communication" />
+			<Add directory="../../../libs/openFrameworks/events" />
+			<Add directory="../../../libs/openFrameworks/gl" />
+			<Add directory="../../../libs/openFrameworks/graphics" />
+			<Add directory="../../../libs/openFrameworks/math" />
+			<Add directory="../../../libs/openFrameworks/sound" />
+			<Add directory="../../../libs/openFrameworks/types" />
+			<Add directory="../../../libs/openFrameworks/utils" />
+			<Add directory="../../../libs/openFrameworks/video" />
+			<Add directory="../../../libs/poco/include" />
+			<Add directory="../../../libs/tess2/include" />
+			<Add directory="../../../libs/cairo/include/cairo" />
 			<Add directory="../../../addons/ofxGui/libs" />
 			<Add directory="../../../addons/ofxGui/src" />
-			<Add directory="../../../addons\ofxGui\src" />
-			<Add directory="../../../addons/ofxKinect/libs" />
-			<Add directory="../../../addons/ofxKinect/src" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\include" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\amd64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\ia64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\license" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\license\libusb-win32" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\x86" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\amd64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\ia64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\license" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\license\libusb-win32" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\x86" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\amd64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\ia64" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\license" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\license\libusb-win32" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\x86" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-			<Add directory="../../../addons\ofxKinect\libs\libfreenect\src" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-1.0" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-1.0\include" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-1.0\lib" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-win32" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-win32\include" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-win32\lib" />
-			<Add directory="../../../addons\ofxKinect\libs\libusb-win32\lib\win_cb" />
-			<Add directory="../../../addons\ofxKinect\src" />
-			<Add directory="../../../addons/ofxKinect/libs/libfreenect/platform/windows" />
 			<Add directory="../../../addons/ofxNetwork/libs" />
 			<Add directory="../../../addons/ofxNetwork/src" />
-			<Add directory="../../../addons\ofxNetwork\src" />
 			<Add directory="../../../addons/ofxOsc/libs" />
 			<Add directory="../../../addons/ofxOsc/src" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack\src" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack\src\ip" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack\src\ip\posix" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack\src\ip\win32" />
-			<Add directory="../../../addons\ofxOsc\libs\oscpack\src\osc" />
-			<Add directory="../../../addons\ofxOsc\src" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/src" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/src/ip" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/src/ip/posix" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/src/ip/win32" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/src/osc" />
 			<Add directory="../../../addons/ofxSvg/libs" />
 			<Add directory="../../../addons/ofxSvg/src" />
-			<Add directory="../../../addons\ofxSvg\libs\svgTiny" />
-			<Add directory="../../../addons\ofxSvg\libs\svgTiny\src" />
-			<Add directory="../../../addons\ofxSvg\src" />
+			<Add directory="../../../addons/ofxSvg/libs/svgTiny" />
+			<Add directory="../../../addons/ofxSvg/libs/svgTiny/src" />
+			<Add directory="../../../addons/ofxThreadedImageLoader/libs" />
+			<Add directory="../../../addons/ofxThreadedImageLoader/src" />
 			<Add directory="../../../addons/ofxVectorGraphics/libs" />
 			<Add directory="../../../addons/ofxVectorGraphics/src" />
-			<Add directory="../../../addons\ofxVectorGraphics\libs" />
-			<Add directory="../../../addons\ofxVectorGraphics\src" />
 			<Add directory="../../../addons/ofxNI2/libs" />
 			<Add directory="../../../addons/ofxNI2/src" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2\include" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2\lib" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2\lib\win32" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2\lib\win32\NiTE2" />
-			<Add directory="../../../addons\ofxNI2\libs\NiTE2\lib\win32\NiTE2\Data" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Android-Arm" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Driver" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-Arm" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-x86" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\MacOSX" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Win32" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\lib" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\lib\win32" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\lib\win32\OpenNI2" />
-			<Add directory="../../../addons\ofxNI2\libs\OpenNI2\lib\win32\OpenNI2\Drivers" />
-			<Add directory="../../../addons\ofxNI2\src" />
-			<Add directory="../../../addons\ofxNI2\src\utils" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2/include" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2/lib" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2/lib/win32" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2/lib/win32/NiTE2" />
+			<Add directory="../../../addons/ofxNI2/libs/NiTE2/lib/win32/NiTE2/Data" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Android-Arm" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Driver" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-Arm" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-x86" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/MacOSX" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/lib" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/lib/win32" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/lib/win32/OpenNI2" />
+			<Add directory="../../../addons/ofxNI2/libs/OpenNI2/lib/win32/OpenNI2/Drivers" />
+			<Add directory="../../../addons/ofxNI2/src/utils" />
 		</Compiler>
 		<Linker>
 			<Add library="..\..\..\libs\FreeImage\lib\win_cb\FreeImage.lib" />
@@ -202,27 +151,351 @@
 			<Add library="ws2_32" />
 			<Add library="Iphlpapi" />
 			<Add library="Comdlg32" />
-			<Add library="../../../addons\ofxAssimpModelLoader\libs\assimp\lib\win_cb\libassimp.dll" />
-			<Add library="../../../addons\ofxKinect\libs\libusb-win32\lib\win_cb\libusb.lib" />
-			<Add library="../../../addons\ofxKinect\libs\libusb-win32\lib\win_cb\libusbd.lib" />
-			<Add library="../../../addons/ofxNI2/libs\OpenNI2\lib\win32\OpenNI2.lib" />
-			<Add library="../../../addons/ofxNI2/libs\NiTE2\lib\win32\NiTE2.lib" />
+			<Add library="..\..\..\addons\ofxNI2\libs\OpenNI2\lib\win32\OpenNI2.lib" />
+			<Add library="..\..\..\addons\ofxNI2\libs\NiTE2\lib\win32\NiTE2.lib" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;" />
-			<Add after="cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;" />
+			<Add after='xcopy /e /i /y &quot;$(PROJECT_DIR)..\..\..\export\win_cb\*.dll&quot;  &quot;$(PROJECT_DIR)bin&quot;' />
+			<Add after='cmd /c if not exist &quot;$(PROJECT_DIR)bin/data&quot; mkdir &quot;$(PROJECT_DIR)bin/data&quot;' />
 			<Mode after="always" />
 		</ExtraCommands>
+		<Unit filename="../../../addons/ofxGui/src/ofxBaseGui.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxBaseGui.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxButton.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxButton.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxGui.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxGuiGroup.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxGuiGroup.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxLabel.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxLabel.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxPanel.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxPanel.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxSlider.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxSlider.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxSliderGroup.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxSliderGroup.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxToggle.cpp">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxGui/src/ofxToggle.h">
+			<Option virtualFolder="addons/ofxGui/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiTE.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiteCAPI.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiteCEnums.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiteCTypes.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiteEnums.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/NiTE2/include/NiteVersion.h">
+			<Option virtualFolder="addons/ofxNI2/libs/NiTE2/include" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Android-Arm/OniPlatformAndroid-Arm.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Android-Arm" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Driver/OniDriverAPI.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Driver" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Driver/OniDriverTypes.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Driver" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-Arm/OniPlatformLinux-Arm.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-Arm" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-x86/OniPlatformLinux-x86.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Linux-x86" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/MacOSX/OniPlatformMacOSX.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/MacOSX" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCAPI.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCEnums.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCProperties.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniCTypes.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniEnums.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniPlatform.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniProperties.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OniVersion.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/OpenNI.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/PS1080.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/libs/OpenNI2/include/ni2/Win32/OniPlatformWin32.h">
+			<Option virtualFolder="addons/ofxNI2/libs/OpenNI2/include/ni2/Win32" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/ofxNI2.cpp">
+			<Option virtualFolder="addons/ofxNI2/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/ofxNI2.h">
+			<Option virtualFolder="addons/ofxNI2/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/ofxNiTE2.cpp">
+			<Option virtualFolder="addons/ofxNI2/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/ofxNiTE2.h">
+			<Option virtualFolder="addons/ofxNI2/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/AssimpModel.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/DepthRemapToRange.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/DepthReprojection.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/DoubleBuffer.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/MeshGenerator.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNI2/src/utils/TimedomainMedianFilter.h">
+			<Option virtualFolder="addons/ofxNI2/src/utils" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxNetwork.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxNetworkUtils.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPClient.cpp">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPClient.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPManager.cpp">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPManager.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPServer.cpp">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxTCPServer.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxUDPManager.cpp">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxNetwork/src/ofxUDPManager.h">
+			<Option virtualFolder="addons/ofxNetwork/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/TimerListener.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip/posix" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip/posix" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/win32/NetworkingUtilsWin.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip/win32" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/ip/win32" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h">
+			<Option virtualFolder="addons/ofxOsc/libs/oscpack/src/osc" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOsc.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscArg.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscBundle.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscBundle.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscMessage.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscMessage.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscParameterSync.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscParameterSync.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscReceiver.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscReceiver.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscSender.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscSender.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/src_colors.cpp">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/svgtiny.cpp">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/svgtiny.h">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_gradient.cpp">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_internal.h">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_list.cpp">
+			<Option virtualFolder="addons/ofxSvg/libs/svgTiny/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvg.cpp">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvg.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxThreadedImageLoader/src/ofxThreadedImageLoader.cpp">
+			<Option virtualFolder="addons/ofxThreadedImageLoader/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxThreadedImageLoader/src/ofxThreadedImageLoader.h">
+			<Option virtualFolder="addons/ofxThreadedImageLoader/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/libs/CreEPS.cpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/libs/CreEPS.hpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/libs/CreEPS_Types.hpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/src/ofxVectorGraphics.cpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/src/ofxVectorGraphics.h">
+			<Option virtualFolder="addons/ofxVectorGraphics/src" />
+		</Unit>
 		<Unit filename="icon.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
-		<Unit filename="src\main.cpp">
+		<Unit filename="src/main.cpp">
 			<Option virtualFolder="src" />
 		</Unit>
-		<Unit filename="src\testApp.cpp">
+		<Unit filename="src/testApp.cpp">
 			<Option virtualFolder="src" />
 		</Unit>
-		<Unit filename="src\testApp.h">
+		<Unit filename="src/testApp.h">
 			<Option virtualFolder="src" />
 		</Unit>
 		<Extensions>
@@ -230,530 +503,5 @@
 			<debugger />
 			<envvars />
 		</Extensions>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiAnim.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiAssert.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiCamera.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiColor4D.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiConfig.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiDefines.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiFileIO.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiLight.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiMaterial.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix3x3.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiMatrix4x4.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiMesh.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiPostProcess.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiQuaternion.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiScene.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiTexture.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiTypes.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiVector2D.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiVector3D.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\aiVersion.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\assimp.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\assimp.hpp">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\Compiler\poppack1.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include\Compiler" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\Compiler\pushpack1.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include\Compiler" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\DefaultLogger.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\IOStream.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\IOSystem.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\Logger.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\LogStream.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\NullLogger.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxAssimpModelLoader\libs\assimp\include\ProgressHandler.h">
-			<Option virtualFolder="addons\ofxAssimpModelLoader\libs\assimp\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxBaseGui.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxBaseGui.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxButton.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxButton.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxGui.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxGuiGroup.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxGuiGroup.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxLabel.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxLabel.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxPanel.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxPanel.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxSlider.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxSlider.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxSliderGroup.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxSliderGroup.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxToggle.cpp">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxGui\src\ofxToggle.h">
-			<Option virtualFolder="addons\ofxGui\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\src\ofxBase3DVideo.h">
-			<Option virtualFolder="addons\ofxKinect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\src\ofxKinect.cpp">
-			<Option virtualFolder="addons\ofxKinect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\src\ofxKinect.h">
-			<Option virtualFolder="addons\ofxKinect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\include\libfreenect-registration.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\include\libfreenect.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.cpp">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusb.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu.cpp">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_internal.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads_win32.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\stdbool.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\platform\windows\unistd.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\platform\windows" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\cameras.c">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\cameras.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\core.c">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\freenect_internal.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\loader.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\registration.c">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\registration.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\tilt.c">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\usb_libusb10.c">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libfreenect\src\usb_libusb10.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libfreenect\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0\libusb.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0" />
-		</Unit>
-		<Unit filename="../../../addons\ofxKinect\libs\libusb-win32\include\lusb0_usb.h">
-			<Option virtualFolder="addons\ofxKinect\libs\libusb-win32\include" />
-		</Unit>
-		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/failguard.cpp">
-			<Option virtualFolder="" />
-		</Unit>
-		<Unit filename="../../../addons/ofxKinect/libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu.cpp">
-			<Option virtualFolder="" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxNetwork.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxNetworkUtils.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPClient.cpp">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPClient.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPManager.cpp">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPManager.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPServer.cpp">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxTCPServer.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxUDPManager.cpp">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNetwork\src\ofxUDPManager.h">
-			<Option virtualFolder="addons\ofxNetwork\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOsc.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscArg.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscBundle.cpp">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscBundle.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscMessage.cpp">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscMessage.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscParameterSync.cpp">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscParameterSync.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscReceiver.cpp">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscReceiver.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscSender.cpp">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\src\ofxOscSender.h">
-			<Option virtualFolder="addons\ofxOsc\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip\posix" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip\posix" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtilsWin.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip\win32" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocketWin.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\ip\win32" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscException.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
-			<Option virtualFolder="addons\ofxOsc\libs\oscpack\src\osc" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\src\ofxSvg.cpp">
-			<Option virtualFolder="addons\ofxSvg\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\src\ofxSvg.h">
-			<Option virtualFolder="addons\ofxSvg\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\src_colors.cpp">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\svgtiny.cpp">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\svgtiny.h">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\svgtiny_gradient.cpp">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\svgtiny_internal.h">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxSvg\libs\svgTiny\src\svgtiny_list.cpp">
-			<Option virtualFolder="addons\ofxSvg\libs\svgTiny\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp">
-			<Option virtualFolder="addons\ofxVectorGraphics\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxVectorGraphics\src\ofxVectorGraphics.h">
-			<Option virtualFolder="addons\ofxVectorGraphics\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxVectorGraphics\libs\CreEPS.cpp">
-			<Option virtualFolder="addons\ofxVectorGraphics\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxVectorGraphics\libs\CreEPS.hpp">
-			<Option virtualFolder="addons\ofxVectorGraphics\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxVectorGraphics\libs\CreEPS_Types.hpp">
-			<Option virtualFolder="addons\ofxVectorGraphics\libs" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\ofxNI2.cpp">
-			<Option virtualFolder="addons\ofxNI2\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\ofxNI2.h">
-			<Option virtualFolder="addons\ofxNI2\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\ofxNiTE2.cpp">
-			<Option virtualFolder="addons\ofxNI2\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\ofxNiTE2.h">
-			<Option virtualFolder="addons\ofxNI2\src" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\AssimpModel.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\DepthRemapToRange.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\DepthReprojection.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\DoubleBuffer.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\MeshGenerator.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\src\utils\TimedomainMedianFilter.h">
-			<Option virtualFolder="addons\ofxNI2\src\utils" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiTE.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiteCAPI.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiteCEnums.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiteCTypes.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiteEnums.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\NiTE2\include\NiteVersion.h">
-			<Option virtualFolder="addons\ofxNI2\libs\NiTE2\include" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Android-Arm\OniPlatformAndroid-Arm.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Android-Arm" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Driver\OniDriverAPI.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Driver" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Driver\OniDriverTypes.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Driver" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-Arm\OniPlatformLinux-Arm.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-Arm" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-x86\OniPlatformLinux-x86.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Linux-x86" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\MacOSX\OniPlatformMacOSX.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\MacOSX" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniCAPI.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniCEnums.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniCProperties.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniCTypes.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniEnums.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniPlatform.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniProperties.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OniVersion.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\OpenNI.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\PS1080.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2" />
-		</Unit>
-		<Unit filename="../../../addons\ofxNI2\libs\OpenNI2\include\ni2\Win32\OniPlatformWin32.h">
-			<Option virtualFolder="addons\ofxNI2\libs\OpenNI2\include\ni2\Win32" />
-		</Unit>
 	</Project>
 </CodeBlocks_project_file>

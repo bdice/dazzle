@@ -1,8 +1,7 @@
-ofxAssimpModelLoader
 ofxGui
-ofxKinect
 ofxNetwork
 ofxOsc
 ofxSvg
+ofxThreadedImageLoader
 ofxVectorGraphics
 ofxNI2

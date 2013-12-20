@@ -1927,17 +1927,17 @@
 	<winsock2.h>
 	<ws2tcpip.h>
 
-1387433801 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\src\ofxni2.cpp
+1387515457 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\src\ofxni2.cpp
 	"ofxNI2.h"
 	"utils/DepthRemapToRange.h"
 
-1387395301 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\src\ofxni2.h
+1387514754 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\src\ofxni2.h
 	"ofMain.h"
 	"OpenNI.h"
 	<assert.h>
 	"utils/DoubleBuffer.h"
 
-1387395299 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\libs\openni2\include\ni2\openni.h
+1387516357 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxni2\libs\openni2\include\ni2\openni.h
 	"OniPlatform.h"
 	"OniProperties.h"
 	"OniEnums.h"
@@ -2394,13 +2394,34 @@
 
 1376284412 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\icon.rc
 
-1376284412 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\main.cpp
+1387395272 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\main.cpp
+	"testApp.h"
+	"ofAppGlutWindow.h"
+
+1387515673 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\testapp.h
 	"ofMain.h"
+	"ofxNI2.h"
+	"ofxNiTE2.h"
+
+1387515830 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\testapp.cpp
 	"testApp.h"
 
-1376284412 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\testapp.h
-	"ofMain.h"
+1376284386 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\libs\openframeworks\app\ofappglutwindow.h
+	"ofConstants.h"
+	"ofAppBaseWindow.h"
+	"ofEvents.h"
+	"ofTypes.h"
+	"ofPixels.h"
 
-1376284412 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\apps\myapps\dazzle\src\testapp.cpp
-	"testApp.h"
+1376284364 source:c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxthreadedimageloader\src\ofxthreadedimageloader.cpp
+	"ofxThreadedImageLoader.h"
+	<sstream>
+
+1376284364 c:\users\bdice1400\code\of_v0.8.0_win_cb_release\addons\ofxthreadedimageloader\src\ofxthreadedimageloader.h
+	<deque>
+	"ofThread.h"
+	"ofImage.h"
+	"ofURLFileLoader.h"
+	"ofTypes.h"
+	"Poco/Condition.h"
 
