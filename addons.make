@@ -1,0 +1,8 @@
+ofxAssimpModelLoader
+ofxGui
+ofxKinect
+ofxNetwork
+ofxOsc
+ofxSvg
+ofxVectorGraphics
+ofxNI2
