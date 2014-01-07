@@ -1,7 +1,5 @@
 ofxGui
 ofxNetwork
 ofxOsc
-ofxSvg
-ofxThreadedImageLoader
 ofxVectorGraphics
-ofxNI2
+ofxOpenNI
