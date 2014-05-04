@@ -14,6 +14,8 @@ public:
     void exit();
 
 	ofVec3f jointPosition(ofxOpenNIUser* user, Joint j);
+	void drawLimbConnection(ofVec3f firstPoint, ofVec3f secondPoint, ofVec3f thirdPoint, ofVec3f fourthPoint);
+	void drawTriangle(ofVec3f firstPoint, ofVec3f secondPoint, ofVec3f thirdPoint);
 
     void userEvent(ofxOpenNIUserEvent & event);
 
